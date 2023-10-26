@@ -11,7 +11,7 @@ class Booking(models.Model):
     def __str__(self):
         return f"Booking for {self.name} on {self.booking_date}"
 
-class Menu(models.Model):
+class MenuItem(models.Model):
     id = models.AutoField(primary_key=True)  # This is automatically created by Django, but included for clarity
     title = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=2)

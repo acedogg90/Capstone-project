@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("admin/", admin.site.urls),
-    path('restaurant/', views.restaurant, name='restaurant'),
+    path('menu/items/', views.MenuItemView.as_view()),
+    path('menu/items/<int:pk>/', views.SingleMenuItemView.as_view()),
+    path('api-auth/', include('rest_framework.urls')),
 ]
