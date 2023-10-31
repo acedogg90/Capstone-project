@@ -1,0 +1,9 @@
+user: admin
+email: michaelscorn@dmpc.com
+pass: thatswhat...
+
+
+user: JimmyH
+email: JimmyH@dmpc.com
+pass: Mr.Potatoe
+Auth Token: 0ca82072ea84816ac7462de3c4f955d1843371a5
