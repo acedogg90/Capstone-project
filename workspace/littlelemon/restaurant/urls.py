@@ -10,4 +10,5 @@ urlpatterns = [
     path('menu/items/<int:pk>/', views.SingleMenuItemView.as_view()),
     path('api-auth/', include('rest_framework.urls')),
     path('api-token-auth/', obtain_auth_token),
+    path('booking/tables/', views.BookingViewSet.as_view({'get': 'list'})),
 ]
